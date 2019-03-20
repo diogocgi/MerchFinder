@@ -1,0 +1,12 @@
+# NetBeans specific #
+MerchFinder/target/
+KafkaConsumer/target/
+nb-configuration.xml
+
+# Class Files #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear

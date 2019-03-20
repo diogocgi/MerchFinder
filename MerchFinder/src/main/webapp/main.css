@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 10, 2019, 11:18:11 AM
+    Author     : diogo
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i');
+
+
+/* para o botao de pesquisa ficar ao lado do campo de pesquisa */
+* {
+  box-sizing: border-box;   
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+div#main-text {
+    
+    padding-top: 130px;
+    margin-bottom: 50px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    color: black;
+    font-size: 10px;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*
+#alarm-nav-btn  {
+    float: right;
+}
+*/
+
+form.search-form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f9f9f9;
+}
+
+div#search-product {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 200px;
+}
+
+div#list-of-products  {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.product-a-ref {
+    margin-right: 15px;
+
+}
+
+.product-div {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+    transition: transform .3s; /* Animation */
+    -webkit-animation: fade 1s 100ms;
+    -moz-animation: fade 1s 100ms;
+    -o-animation: fade 1s 100ms;
+    animation: fade 1s 100ms;
+    animation-fill-mode: forwards; /* which will persist the last keyframe and in this case keep the div visible. */
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  
+}
+
+@-moz-keyframes slidein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes slidein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.product-div:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index:555555 !important;
+}
+
+.product-div:last-child {
+    margin-right: 0px;
+}
+
+form.search-form button {
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search-form button:hover {
+  background: #0b7dda;
+}
+
+form.search-form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.product-img {
+    
+}
+
+.product-div span {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding-left: 15px;
+   padding-right: 15px;
+   color: #000;
+   text-decoration: none;
+}
+
