@@ -20,6 +20,10 @@ KafkaConsumer/
         +-- main.java
     +-- pom.xml
 MerchFinder/
+    +-- _dbqueries/
+        +-- queries.sql
+    +-- _dockerconfigs/
+        +-- docker-compose.yml
     +-- src/main/
         +-- java/com/ua/merchfinder/
             +-- controllers/
