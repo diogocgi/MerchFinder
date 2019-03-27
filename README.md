@@ -79,6 +79,8 @@ The documentation of this project can be found in the [wiki](https://github.com/
       - https://netbeans.org/kb/docs/ide/mysql.html
  - JPA
       - https://www.youtube.com/watch?v=xgXypqbjaDs
+ - JPQL 
+      - https://en.wikipedia.org/wiki/Java_Persistence_Query_Language
       
 ## Creators
 
