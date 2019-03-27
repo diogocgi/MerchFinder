@@ -75,6 +75,10 @@ The documentation of this project can be found in the [wiki](https://github.com/
       - https://gist.github.com/abacaphiliac/f0553548f9c577214d16290c2e751071
  - Docker configuration
       - https://docs.docker.com/install/linux/docker-ce/ubuntu/
+ - MySQL database connection 
+      - https://netbeans.org/kb/docs/ide/mysql.html
+ - JPA
+      - https://www.youtube.com/watch?v=xgXypqbjaDs
       
 ## Creators
 
