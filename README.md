@@ -3,8 +3,7 @@ Java EE demo project for interaction with the Ebay REST API
 
 ## Table of Contents
 - [Objective](#objective)
-- [What's included](#whats-included)
-- [Documentation](#documentation)
+- [Summary](#summary)
 - [Tools](#tools)
 - [Resources](#resources)
 - [Creators](#creators)
@@ -12,45 +11,17 @@ Java EE demo project for interaction with the Ebay REST API
 ## Objective
 The development of this web application demo was part of the Software Engineering course. It's an introduction to Java EE development and to the integration of different technologies (Docker, MySQL database and Kafka cluster) in the same project.
 
-## What's included
-```
-KafkaConsumer/
-    +-- src/main/java/com/ua/kafkaconsumer/
-        +-- consumer.java
-        +-- main.java
-    +-- pom.xml
-MerchFinder/
-    +-- _dbqueries/
-        +-- queries.sql
-    +-- _dockerconfigs/
-        +-- docker-compose.yml
-    +-- src/main/
-        +-- java/com/ua/merchfinder/
-            +-- controllers/
-                +-- GetEbaySearchResultsCtrl.java
-            +-- entities/
-                +-- Productssearches.java
-            +-- kafka/
-                +-- EventProducer.java
-            +-- scheduler/
-                +-- TimerSessionBean.java
-            +-- session/
-                +-- AbstractFacade.java
-                +-- ProductssearchesFacade.java
-        +-- resources/META-INF/
-            +-- persistence.xml
-        +-- webapp/
-            +-- WEB-INF/
-                +-- glassfish-resources.xml
-                +-- web.xml
-            +-- index.jsp
-            +-- main.css
-    +-- pom.xml
-```
+## Summary
 
-## Documentation
+This project uses the Ebay Finding API to obtain search results and display them to the users. It has a database that serves as cache, which reduces the number of API calls and decreases the response time. The database stores and updates the product searches made by users and returns them when the same searches are made.
 
-The documentation of this project can be found in the [wiki](https://github.com/Diogo525/MerchFinder/wiki).
+Kafka is used to store message updates of the products in the database. This messages are consumed by the kafka client program.
+
+![demo_img]
+
+[demo_img]: https://github.com/Diogo525/MerchFinder/blob/master/images/demo_1.png
+
+For further details check the [wiki](https://github.com/Diogo525/MerchFinder/wiki).
 
 ## Tools
 
