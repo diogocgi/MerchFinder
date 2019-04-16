@@ -1,5 +1,5 @@
 # MerchFinder
-Java EE demo project for interaction with the Ebay REST API
+Java EE demo project and interaction with the Ebay REST API
 
 ## Table of Contents
 - [Objective](#objective)
