@@ -6,6 +6,7 @@ Java EE demo project and interaction with the Ebay REST API
 - [Summary](#summary)
 - [Tools](#tools)
 - [Resources](#resources)
+- [Testing](#testing)
 - [Creators](#creators)
 
 ## Objective
@@ -52,7 +53,15 @@ For further details check the [wiki](https://github.com/Diogo525/MerchFinder/wik
       - https://www.youtube.com/watch?v=xgXypqbjaDs
  - JPQL 
       - https://en.wikipedia.org/wiki/Java_Persistence_Query_Language
-      
+
+## Testing
+
+In order to test this web application you need to follow the various steps mentioned in the [wiki](https://github.com/Diogo525/MerchFinder/wiki) and add to the files:
+- [TimerSessionBean.java](https://github.com/Diogo525/MerchFinder/tree/master/MerchFinder/src/main/java/com/ua/merchfinder/scheduler), line 85
+- [GetEbaySearchResultsCtrl.java](https://github.com/Diogo525/MerchFinder/blob/master/MerchFinder/src/main/java/com/ua/merchfinder/controllers/GetEbaySearchResultsCtrl.java), line 117
+
+&ndash; the Ebay Production or Sandbox Environment appID to the variable "appName".
+
 ## Creators
 
 **Diogo Guedes**
